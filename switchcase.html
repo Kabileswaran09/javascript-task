@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        c=Number(prompt("enter the case number"))
+        function formula(x,y){
+            let z = x**2 + y**2 +2*x*y
+             return z
+        }
+        function pattern(){
+            for(let i=1;i<=5;i++){
+                for(let j=1;j<=i;j++){
+                    document.write("* ")
+                }
+                document.write("<br>")
+            }
+        }
+        function formula2(l,b,h){
+            let a = l*b*h
+             return a
+        }
+        function formula3(x,y){
+            let z = (x+y)*(x-y)
+             return z
+        }
+        switch(c){
+            case 1:
+                   x = Number(prompt("enter the value of x"))
+                   y = Number(prompt("enter the value of y"))
+                   let ans=formula(x,y)
+                   document.writeln(ans)
+                   break
+            case 2:
+                   pattern()
+                   break
+            case 3:
+                   l = Number(prompt("enter the length"))
+                   b = Number(prompt("enter the breadth"))
+                   h= Number(prompt("enter the height"))
+                   let ans2=formula2(l,b,h)
+                   document.writeln(ans2)
+                   break
+                  
+            case 4:
+                   x = Number(prompt("enter the value of x"))
+                   y = Number(prompt("enter the value of y"))
+                   let ans3=formula3(x,y)
+                   document.writeln(ans3)
+                   break
+            default:
+                    document.writeln("invalid")
+        }
+    </script>
+</body>
+</html>

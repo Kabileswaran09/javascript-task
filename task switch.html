@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let c=Number(prompt("enter the case no 1:addition,2:substraction,3:multiplication,4:division,5:modulus"))
+        let n1=prompt("enter the 1st number:")
+        let n2=prompt("enter the 2nd number:")
+        function add(a,b){
+            let ans=a+b
+            return ans
+        }
+        function sub(c,b){
+            let ans=c-b
+            return ans
+        }
+        function mul(a,b){
+            let ans=a*b
+            return ans
+        }
+        function div(a,b){
+            let ans=a/b
+            return ans
+        }
+        function mod(a,b){
+            let ans=a%b
+            return ans
+        }
+        switch(c){
+            case 1:
+                   let ans=add(Number(n1),Number(n2))
+                   document.writeln(ans)
+                   break
+             case 2:
+                   let ans1=sub(n1,n2)
+                   document.writeln(ans)
+                   break
+            case 3:
+                   let ans2=mul(n1,n2)
+                   document.writeln(ans)
+                   break
+             case 4:
+                   let ans3=div(n1,n2)
+                   document.writeln(ans)
+                   break
+            case 5:
+                   let ans4=div(n1,n2)
+                   document.writeln(ans)
+                   break
+            default:
+                    document.writeln("invalid case")
+        }
+    </script>
+</body>
+</html>

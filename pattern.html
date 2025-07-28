@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pattern1(){
+             for(let i=1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                if(j%2==0){
+                  document.write("0 ")   
+                }
+                else{
+                     document.write("1 ")
+                }
+            }
+            document.writeln("<br>")
+        }
+        }
+            function pattern2(){
+                for(let i=1;i<=5;i++){
+                let n=1
+                for(let j=1;j<=5;j++){
+                    document.write(n," ")
+                   n=n+j+1
+                }
+                document.write("<br>")
+            }
+            }
+            function pattern4(){
+            let n=1
+            for(let i=1;i<=5;i++){
+                for(let j=1;j<=i;j++){
+                     document.write(n," ")
+                     n++
+                }
+                document.write("<br>")
+            }
+        
+             }
+                function pattern3(){
+                let n=15
+                for(let i=1;i<=6;i++){
+                    document.write(n," ")
+                    n=n-i
+                }
+                }
+                    function pattern5(){
+                    for(let i=1;i<=5;i++){
+                        for(let j=1;j<=5;j++){
+                            if(i==2 && j>=2){
+                                document.writeln("&nbsp;")
+                            }
+                            else if(i==4 && j<=4){
+                                 document.writeln("&nbsp;&nbsp;")
+                            }
+                            else{
+                                document.writeln("*")
+                            }
+                        }
+                        document.writeln("<br>")
+                    }
+                }
+            function pattern6(){
+        for(let i=5;i>=1;i--){
+            for( let j=1;j<=i;j++){
+                document.writeln("&nbsp;&nbsp;")
+            }
+            let temp=(i*2)-1;
+            console.log(temp)
+            for(let k=temp;k<10;k++){
+                document.writeln("*")
+            }
+            document.writeln("<br>")
+        }
+        }
+        
+        let op=Number(prompt("enter the option"))
+        switch(op){
+            case 1:
+                   pattern1()
+                   break
+            case 2:
+                   pattern2()
+                   break
+            case 3:
+                   pattern3()
+                   break
+            case 4:
+                   pattern4()
+                   break
+            case 5:
+                   pattern5()
+                   break
+            case 6:
+                   pattern6()
+                  
+        }
+       
+    </script>
+</body>
+</html>

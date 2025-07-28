@@ -77,6 +77,55 @@
             document.writeln("<br>")
         }
         }
+        function pattern7(){
+            for(let i=1;i<=5;i++){
+            for(let j=1;j<=5;j++){
+                if(i%2==0){
+                    document.writeln("0 ")
+                }
+                else{
+                    document.writeln("1 ")
+                }
+            }
+            document.writeln("<br>")
+        }
+        }
+        function pattern8(){
+            for(let i=1;i<=5;i++){
+            for(let j=5;j>=i;j--){
+                document.write("* ");
+            }
+             document.writeln("<br>");
+        }
+        }
+        function pattern9(){
+             for(let i=0;i<=5;i++){
+            for(let j=0;j<i;j++){
+                if(i%2==0){
+                    document.write("0");
+                }
+                else{
+                    document.write("1");
+                }
+            }
+             document.writeln("<br>");
+        }
+        }
+    function pattern10(){
+    let c=1;
+    for(let i=1;i<=5;i++){
+        c=i;
+        for(let j=5-1;j>=i;j--){
+            document.write("&nbsp;&nbsp;");
+        }
+        for(let j=1;j<=i;j++){
+            document.write(c)
+            c--;
+        }
+       
+        document.writeln("<br>")
+    }
+    }
         
         let op=Number(prompt("enter the option"))
         switch(op){
@@ -97,6 +146,14 @@
                    break
             case 6:
                    pattern6()
+            case 7:
+                   pattern7()
+            case 8:
+                   pattern8()
+            case 9:
+                   pattern9()
+            case 10:
+                   pattern10()
                   
         }
        

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a="kabiles@123"
+        let b="abcdefghijklmnopqrstuvwxyz"
+        let vsum=0
+        let asum=0
+        let nsum=0
+        for(let i=0;i<a.length;i++){
+            if(a[i]=="a" || a[i]== "e" || a[i]=="i" || a[i]=="o" || a[i]=="u"){
+                vsum++;
+                 
+            }
+        }
+         document.writeln("vowel count:",vsum+"<br>")
+         for(let i=0;i<a.length;i++){
+            for(let j=0;j<b.length;j++){
+                if(a[i]==b[j]){
+                    asum++;
+                }
+            }
+         }
+         document.writeln("albhabet count :",asum+"<br>")
+         for(let i=0;i<a.length;i++){
+            if(a[i]>=0 && a[i]<=9){
+                   nsum++;
+            }
+         }
+          document.writeln("number count:",nsum+"<br>")
+        let sp=asum+nsum;
+        let tsp=a.length-sp
+        document.writeln("total special character:",tsp+"<br>")
+
+    </script>
+</body>
+</html>

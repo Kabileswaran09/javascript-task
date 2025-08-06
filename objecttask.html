@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ---object---
+        let phone={
+            brand:'Apple',
+            OperationSystem:'IOS',
+            CPUSpeed:'3.23 GHz',
+            Memory:'128GB',
+            ScreenSize:'6.1 Inches',
+            color:'red',
+            camera:'Dual camera',
+            ModelName:'iphone15',
+            price:75000,
+            percentage:30,
+            
+            TotalPrice:function(){
+                // return this.price-this.discountprice
+            },
+            AdvancedModel:function(){
+                return 'iphone16'
+            },
+            discountrate:function(){
+                let r= this.price*this.percentage/100
+                let total=this.price-r
+                return total
+            }
+
+        }
+        // ---function call----
+        console.log(phone.TotalPrice())
+        console.log(phone.AdvancedModel())
+        console.log(phone)
+
+
+        // ----add---
+        phone.latestcolor="blue";
+        console.log(phone)
+
+        // ----delete---
+        delete phone.camera
+         console.log(phone)
+
+        // ----update-----
+        phone.ModelName="iphone16"
+         console.log(phone)
+
+        //  ---calling single key---
+        // --dot method---
+       console.log( phone.color)
+
+        // console.log(discountrate())
+
+        console.log(discountrate())
+    </script>
+</body>
+</html>

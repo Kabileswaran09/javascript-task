@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        students=[]
+        for(let i=1;i<=2;i++){
+            let name=prompt(i+") enter the name?")
+            let dept=prompt(i+") enter the department?")
+            let age=prompt(i+") enter the age")
+
+            let details={
+                sname:name,
+                sdept:dept,
+                sage:age
+            }
+            students.push(details)
+        }
+        // console.log(students)
+
+        // set the value into Storage
+        // -------------------------------
+        let db=JSON.stringify(students)
+        // console.log(db)
+        localStorage.setItem("first",db)
+
+        // get the values into Storage
+        // ------------------------------------
+        let n=localStorage.getItem("first")
+
+        // string to object
+        // ----------------------------------
+        let fi=JSON.parse(n)
+        console.log(fi)
+
+        
+        fi.forEach(element => {
+            document.writeln("<p>"+element.sname+"==>"+element.sdept+"==>"+element.sage+"</p>")
+        });
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="first" value="kabiles1234@gmail.com">
+
+    <script>
+
+       let n = document.getElementById("first")
+       document.writeln("<br>")
+
+      let str = n.value
+      let alphabet = "abcdefghijklmnopqrstuvwxyz"
+      let spchar = "!@#$%^&*()<>?:]/.,"
+
+      let acount = 0;
+      let ncount = 0;
+      let scount = 0;
+
+      for(let i=0;i<str.length;i++){
+        for(let j=0;j<alphabet.length;j++){
+            if(str[i]==alphabet[j]){
+                acount++;
+            }
+        }
+      }
+      document.writeln("alphabetic Count :"+acount);
+      document.writeln("<br>")
+
+      for(let i=0;i<str.length;i++){
+        if(str[i]>=0 && str[i]<=9){
+            ncount++;
+        }
+      }
+      document.writeln("Number Count :"+ncount);
+      document.writeln("<br>")
+
+      for(let i=0;i<str.length;i++){
+        for(let j=0;j<spchar.length;j++){
+            if(str[i]==spchar[j]){
+                scount++;
+            }
+        }
+      }
+      document.writeln("spcharacter Count :"+scount);
+      document.writeln("<br>")
+
+    </script>
+</body>
+</html>

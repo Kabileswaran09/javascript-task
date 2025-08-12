@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>kabiles</h1>
+        <h1>vicky</h1>
+         <h1>sdlc</h1>
+         <h2 class="one">ram</h2>
+         <p class="one">ravi</p>
+         <div class="div1">
+            <h1>lets go</h1>
+            <h1>welcome</h1>
+         </div>
+          <div class="div1">
+                <h1>welcome all</h1>
+            </div>
+
+
+  
+    <script>
+        
+        let n=document.getElementsByTagName("h1")
+        console.log(n)
+        for (const element of n) {
+            console.log(element.innerText)
+            
+        }
+        let p=document.getElementsByClassName("one")
+         console.log(p)
+        for (const element of p) {
+            console.log(element.innerHTML)
+            
+        }
+        let r=document.querySelector(".div1")
+         console.log(r.innerText)
+        
+
+    </script>
+</body>
+</html>

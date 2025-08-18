@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="one" placeholder="enter the 1st number">
+     <input type="number" id="two" placeholder="enter the 1st number">
+     <button onclick="add()">add</button>
+      <button onclick="sub()">sub</button>
+       <button onclick="mul()">mul</button>
+        <button onclick="div()">div</button>
+         <button onclick="mod()">mod</button>
+          
+        <script>
+            function add(){
+            let a=document.getElementById("one").value
+            let b=document.getElementById("two").value
+            if(a==""){
+                alert("enter the 1st number")
+            }
+            else if(b==""){
+                alert("enter the 2nd number")
+            }
+            else{
+                let para=document.createElement("p")
+             para.textContent=Number(a)+Number(b);
+             let body=document.querySelector("body")
+             body.append(para)
+            }
+            }
+            function sub(){
+            let a=document.getElementById("one").value
+            let b=document.getElementById("two").value
+             if(a==""){
+                alert("enter the 1st number")
+            }
+            else if(b==""){
+                alert("enter the 2nd number")
+            }
+            else{
+                let para=document.createElement("p")
+             para.textContent=Number(a)-Number(b);
+             let body=document.querySelector("body")
+             body.append(para)
+            }
+            }
+             function mul(){
+            let a=document.getElementById("one").value
+            let b=document.getElementById("two").value
+            if(a==""){
+                alert("enter the 1st number")
+            }
+            else if(b==""){
+                alert("enter the 2nd number")
+            }
+            else{
+                let para=document.createElement("p")
+             para.textContent=Number(a)*Number(b);
+             let body=document.querySelector("body")
+             body.append(para)
+            }
+            }
+             function div(){
+            let a=document.getElementById("one").value
+            let b=document.getElementById("two").value
+            if(a==""){
+                alert("enter the 1st number")
+            }
+            else if(b==""){
+                alert("enter the 2nd number")
+            }
+            else{
+                let para=document.createElement("p")
+             para.textContent=Number(a)/Number(b);
+             let body=document.querySelector("body")
+             body.append(para)
+            }
+            }
+            function mod (){
+            let a=document.getElementById("one").value
+            let b=document.getElementById("two").value
+            if(a==""){
+                alert("enter the 1st number")
+            }
+            else if(b==""){
+                alert("enter the 2nd number")
+            }
+            else{
+                let para=document.createElement("p")
+             para.textContent=Number(a)%Number(b);
+             let body=document.querySelector("body")
+             body.append(para)
+            }
+            }
+            
+        </script>
+</body>
+</html>

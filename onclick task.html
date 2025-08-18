@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="t" placeholder="tamil mark"><br><br>
+     <input type="number" id="e" placeholder="engilsh mark"><br><br>
+      <input type="number" id="m" placeholder="maths mark"><br><br>
+       <input type="number" id="s" placeholder="science mark"><br><br>
+        <input type="number" id="ss" placeholder="socical mark"><br><br><br>
+        <button onclick="func()">Average</button>
+
+        <script>
+            function func(){
+                 let mt=document.getElementById("t").value
+             let me=document.getElementById("e").value
+              let mm=document.getElementById("m").value
+               let ms=document.getElementById("s").value
+                let mss=document.getElementById("ss").value
+                if(mt==""){
+                    alert("enter the tamil mark:")
+                }
+                else if(me==""){
+                     alert("enter the english mark:")
+                }
+                else if(mm==""){
+                     alert("enter the maths mark:")
+                }
+                else if(ms==""){
+                     alert("enter the science mark:")
+                }
+                else if(mss==""){
+                     alert("enter the social mark:")
+                }
+                else{
+                let total=Number(mt)+Number(me)+Number(mm)+Number(ms)+Number(mss)
+                let Average=total/5;
+                let para=document.createElement("p")
+                para.textContent=Average;
+                let body=document.querySelector("body")
+                body.append(para)
+                }
+            }
+            
+        </script>
+</body>
+</html>
